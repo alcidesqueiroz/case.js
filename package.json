@@ -1,0 +1,54 @@
+{
+  "name": "case.js",
+  "version": "1.0.1",
+  "description": "🔠 A lightweight library for converting between different cases, such as camel, kebab, snake, pascal and others.",
+  "license": "MIT",
+  "repository": "alcidesqueiroz/case.js",
+  "author": {
+    "name": "Alcides Queiroz",
+    "email": "alcidesqueiroz <at> gmail",
+    "url": "https://www.alcidesqueiroz.com"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "yarn run lint && yarn run test:unit",
+    "lint": "eslint '**/*.js'",
+    "test:unit": "tape '{,!(node_modules)/**/}*.test.js' | tap-spec"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src/index.js",
+    "src/camel.js",
+    "src/constant.js",
+    "src/dot.js",
+    "src/kebab.js",
+    "src/pascal.js",
+    "src/snake.js",
+    "src/space.js"
+  ],
+  "keywords": [
+    "convert",
+    "case",
+    "camel",
+    "constant",
+    "dot",
+    "kebab",
+    "pascal",
+    "snake",
+    "space"
+  ],
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "prettier": "^2.2.1",
+    "rewire": "^5.0.0",
+    "sinon": "^9.2.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.0.1"
+  }
+}
